@@ -58,19 +58,19 @@ for( String it : response )
 Available options:
 
 
-| name          | description |
-|---------------|-------------|
-| logitBias     | Accepts an obnect mapping each token (specified by their token ID in the tokenizer) to an associated bias value from -100 to 100 |
-| model         | The AI model to be used (default: `gpt-3.5-turbo`) |
-| maxTokens     | The maximum number of tokens that can be generated in the chat completion |
-| numOfChoices  | How many chat completion choices to generate for each input message (default: 1) |
-| temperature   | What sampling temperature to use, between 0 and 2 (default: `0.7`) |
+| name          | description                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------|
+| logitBias     | Accepts an object mapping each token (specified by their token ID in the tokenizer) to an associated bias value from -100 to 100 |
+| model         | The AI model to be used (default: `gpt-3.5-turbo`)                                                                               |
+| maxTokens     | The maximum number of tokens that can be generated in the chat completion                                                        |
+| numOfChoices  | How many chat completion choices to generate for each input message (default: 1)                                                 |
+| temperature   | What sampling temperature to use, between 0 and 2 (default: `0.7`)                                                               |
 
 
 ### Function `gptPromptForData` 
 
 The `gptPromptForData` function carries out a GPT chat prompt and returns the response as a list of 
-objects having the schema speciefied. For example: 
+objects having the schema specified. For example: 
 
 ```nextflow 
 
