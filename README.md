@@ -58,13 +58,13 @@ for( String it : response )
 Available options:
 
 
-| name          | description                                                                                                                      |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------|
-| logitBias     | Accepts an object mapping each token (specified by their token ID in the tokenizer) to an associated bias value from -100 to 100 |
-| model         | The AI model to be used (default: `gpt-3.5-turbo`)                                                                               |
-| maxTokens     | The maximum number of tokens that can be generated in the chat completion                                                        |
-| numOfChoices  | How many chat completion choices to generate for each input message (default: 1)                                                 |
-| temperature   | What sampling temperature to use, between 0 and 2 (default: `0.7`)                                                               |
+| name            | description                                                                                                                      |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------|
+| `logitBias`     | Accepts an object mapping each token (specified by their token ID in the tokenizer) to an associated bias value from -100 to 100 |
+| `model`         | The AI model to be used (default: `gpt-3.5-turbo`)                                                                               |
+| `maxTokens`     | The maximum number of tokens that can be generated in the chat completion                                                        |
+| `numOfChoices`  | How many chat completion choices to generate for each input message (default: 1)                                                 |
+| `temperature`   | What sampling temperature to use, between 0 and 2 (default: `0.7`)                                                               |
 
 
 ### Function `gptPromptForData` 
@@ -91,12 +91,12 @@ println "Birth date: ${response[0].birthDate}"
 The following options are available: 
 
 
-| name          | description |
-|---------------|-------------|
-| model         | The AI model to be used (default: `gpt-3.5-turbo`) |
-| maxTokens     | The maximum number of tokens that can be generated in the chat completion |
-| schema        | The expected strcuture for the result object represented as map object in which represent the attribute name and the value the attribute type |
-| temperature   | What sampling temperature to use, between 0 and 2 (default: `0.7`) |
+| name            | description |
+|-----------------|-------------|
+| `model`         | The AI model to be used (default: `gpt-3.5-turbo`) |
+| `maxTokens`     | The maximum number of tokens that can be generated in the chat completion |
+| `schema`        | The expected strcuture for the result object represented as map object in which represent the attribute name and the value the attribute type |
+| `temperature`   | What sampling temperature to use, between 0 and 2 (default: `0.7`) |
 
 
 ### Configuration file 
