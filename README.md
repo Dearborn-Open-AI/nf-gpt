@@ -104,13 +104,13 @@ The following options are available:
 The following config options can be specified in the `nextflow.config` file: 
 
 
-| name          | description |
-|---------------|-------------|
-| gpt.apiKey        | Your OpenAI API key. If missing it uses the `OPENAI_API_KEY` env variable | 
-| gpt.endpoint      | The OpenAI endpoint (defualt: `https://api.openai.com`)   |
-| gpt.model         | The AI model to be used (default: `gpt-3.5-turbo`) |
-| gpt.maxTokens     | The maximum number of tokens that can be generated in the chat completion |
-| gpt.temperature   | What sampling temperature to use, between 0 and 2 (default: `0.7`) |
+| name            | description |
+|-----------------|-------------|
+| `gpt.apiKey`        | Your OpenAI API key. If missing it uses the `OPENAI_API_KEY` env variable | 
+| `gpt.endpoint`      | The OpenAI endpoint (defualt: `https://api.openai.com`)   |
+| `gpt.model`         | The AI model to be used (default: `gpt-3.5-turbo`) |
+| `gpt.maxTokens`     | The maximum number of tokens that can be generated in the chat completion |
+| `gpt.temperature`   | What sampling temperature to use, between 0 and 2 (default: `0.7`) |
 
 
 ## Development 
