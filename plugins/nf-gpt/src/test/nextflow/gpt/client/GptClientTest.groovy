@@ -19,11 +19,15 @@ package nextflow.gpt.client
 
 import nextflow.Session
 import nextflow.gpt.config.GptConfig
+import spock.lang.Requires
 import spock.lang.Specification
+import spock.lang.Timeout
+
 /**
  *
  * @author Paolo Di Tommaso <paolo.ditommaso@gmail.com>
  */
+@Timeout(30)
 class GptClientTest extends Specification {
 
     def 'should parse response' () {
@@ -111,6 +115,7 @@ class GptClientTest extends Specification {
         resp.choices.get(0).message.tool_calls[2].function.arguments == "{\"location\": \"Paris\"}"
     }
 
+    @Requires({ System.getenv('OPENAI_API_KEY') })
     def 'should call tools' () {
         given:
         def query = '''
@@ -178,6 +183,7 @@ class GptClientTest extends Specification {
 
     }
 
+    @Requires({ System.getenv('OPENAI_API_KEY') })
     def 'should get structured output' () {
         given:
         def session = Mock(Session) { getConfig() >> [:] }
